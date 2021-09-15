@@ -14,8 +14,8 @@ class TripletDataset(Dataset):
         data_pair = self.dataset[idx]
         
         anchor = self.tokenizer(data_pair[0], add_special_tokens=True, max_length=self.max_len, return_token_type_ids=False, padding='max_length', return_attention_mask=True, return_tensors='pt', truncation=True)
-        positive = self.tokenizer(data_pair[0], add_special_tokens=True, max_length=self.max_len, return_token_type_ids=False, padding='max_length', return_attention_mask=True, return_tensors='pt', truncation=True)
-        negative = self.tokenizer(data_pair[0], add_special_tokens=True, max_length=self.max_len, return_token_type_ids=False, padding='max_length', return_attention_mask=True, return_tensors='pt', truncation=True)
+        positive = self.tokenizer(data_pair[1], add_special_tokens=True, max_length=self.max_len, return_token_type_ids=False, padding='max_length', return_attention_mask=True, return_tensors='pt', truncation=True)
+        negative = self.tokenizer(data_pair[2], add_special_tokens=True, max_length=self.max_len, return_token_type_ids=False, padding='max_length', return_attention_mask=True, return_tensors='pt', truncation=True)
 
         anchor_ids, anchor_mask = anchor['input_ids'], anchor['attention_mask']
         positive_ids, positive_mask = positive['input_ids'], positive['attention_mask']
