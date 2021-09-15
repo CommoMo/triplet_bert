@@ -1,5 +1,6 @@
 # Introduction
 * Pre-trained Language Model을 기반으로 간단히 Triplet network 학습이 가능한 코드입니다.
+  * 현재 코드는 monologg님의 ELECTRA모델을 사용했습니다.
 * 아직 코드 정리가 안된 단계입니다.(9월 15일 기준)
 
 # Data Processing
