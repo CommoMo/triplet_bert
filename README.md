@@ -1,3 +1,7 @@
+# Introduction
+* Pre-trained Language Model을 기반으로 간단히 Triplet network 학습이 가능한 코드입니다.
+* 아직 코드 정리가 안된 단계입니다.(9월 15일 기준)
+
 # Data Processing
 * 실제 뉴스 기사를 바탕으로 만든 데이터 입니다.
 * 뉴스 기사 내 허위 문장이 태깅된 데이터로, 허위 문장과 아닌 문장으로 구분이 된 데이터를 triplet 데이터로 변환합니다.
